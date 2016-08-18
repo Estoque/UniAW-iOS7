@@ -1,0 +1,155 @@
+/* Sleet condition iph5
+   UniAW6.2 By Ian Nicoll with credit to Dacal */
+
+@-webkit-keyframes wiper{
+0%		{-webkit-transform:rotate(-115deg);}
+60% 	{-webkit-transform:rotate(-115deg);}
+70% 	{-webkit-transform:rotate(95deg);}
+80% 	{-webkit-transform:rotate(-115deg);}
+100% 	{-webkit-transform:rotate(-115deg);}}
+
+#wiper{
+	background-size:55px 300px;
+	position:absolute;
+	top:-20px;
+	left:120px;
+	height: 300px;
+	width: 55px;
+	-webkit-animation: wiper;	
+	-webkit-transform-origin-x: 80%;
+	-webkit-transform-origin-y: 3%;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#trace {
+	position: absolute;
+	background-size: 320px 480px;
+	top: 0px;
+	left: 0px;
+	height: 480px;
+	width: 320px;
+	-webkit-animation: fade_trace;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes fade_trace {
+    0%	 { opacity: 0; }
+	62% { opacity: 0; }
+	70%	 { opacity: 0.6; }
+	72%	 { opacity: 0.6; }
+	80%	 { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+#water {
+	position: absolute;
+	background-size: 320px 480px;
+	top: 0px;
+	left: 0px;
+	height: 480px;
+	width: 320px;
+	-webkit-animation: fade_water;
+	-webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: ease;
+	-webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes fade_water {
+    0%	 { opacity: 0.0; }
+    30%	 { opacity: 0.0; }
+	63% { opacity: 1.0; }
+	65%	 { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+#cloudContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+	opacity: 0.0;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#cloudContainer > div > img {
+     position: absolute;
+     width: 300px;
+     height: 200px;
+}
+@-webkit-keyframes fade {
+    0%	 { opacity: 0; }
+    10%	 { opacity: 0.5; }
+	15%	 { opacity: 1; }
+    85%  { opacity: 1; }
+    95%  { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes float {
+    0%	 { -webkit-transform: translateX(-50px); }
+    100% { -webkit-transform: translateX(400px); }
+}
+
+#dropContainer > div {
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#dropContainer > div > img {
+     position: absolute;
+     width: 8px;
+     height: 12px;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+     -webkit-transform-origin: 50% -100%;
+}
+
+@-webkit-keyframes drop {
+    0%	 { -webkit-transform: translate(0px, -10px); }
+    100% { -webkit-transform: translate(0px, 568px); }
+}
+
+@-webkit-keyframes fade2 {
+    0%	 { opacity: 0; }
+	5%	 { opacity: 1; }
+	95%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#frameContainer > div {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#frameContainer > div > img {
+     position: absolute;
+    width: 15px;
+    height: 15px;
+}
+@-webkit-keyframes fade3 {
+    0%	 { opacity: 0; }
+	5%	 { opacity: 1; }
+	95%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#Static_cloud {
+	position: absolute;
+	left: 0px;
+    top: -8px;
+	width: 320px;
+	background-color: transparent;
+	opacity: 0.0;
+	-webkit-animation: Static_cloud_animation 40s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;   
+
+}
+@-webkit-keyframes Static_cloud_animation {
+	0% {opacity: 0;}
+	100% {opacity: 0.5;}
+}

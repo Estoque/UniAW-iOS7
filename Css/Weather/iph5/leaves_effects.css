@@ -1,0 +1,38 @@
+/* Wind_Effects condition iph5
+   UniAW6.2 By Ian Nicoll with credit to Dacal */
+
+#windContainer > div {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#windContainer > div > img {
+     position: absolute;
+     width: 70px;
+     height: 70px;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+     -webkit-transform-origin: 0% 10%;
+}
+	
+@-webkit-keyframes fadeWind {
+    0%	 { opacity: 1; }
+    95%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes floatWind {
+    0%	 { -webkit-transform: translate(-100px, -100px); }
+    100% { -webkit-transform: translate(670px, 200px); }
+}
+@-webkit-keyframes clockwiseSpin {
+    0%	 { -webkit-transform: rotateX(-180deg); }
+    100% { -webkit-transform: rotateX(180deg); }
+}
+@-webkit-keyframes counterclockwiseSpin {
+    0%	 { -webkit-transform: rotate(180deg); }
+    100% { -webkit-transform: rotate(-180deg); }
+}	

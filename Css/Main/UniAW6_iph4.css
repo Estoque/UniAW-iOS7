@@ -1,0 +1,1173 @@
+/* UniAW6.4PP_iph5.css By Ian Nicoll and Dacal 
+===========================================================================*/
+/* UniAW iOS7 Customized and Localized by Estoque - est0que.tistory.com */
+html {
+	background: transparent;
+}
+
+
+body{
+	position: absolute;
+	top: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 320px;
+	height: 480px;
+	font-family: 'HelveticaNeue-Light',AppleSDGothicNeo-UltraLight;
+	color: #fff;
+	opacity: 0.0;
+	-webkit-animation: fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+/* WEBKIT ANIMATION CODES */
+
+	@-webkit-keyframes fadein { 
+	0% 		{opacity : 1;}
+	50%		{opacity : 1;}
+	100%		{opacity : 1.0;}
+	}
+
+	
+	@-webkit-keyframes moon_info_fader{  /* Fade in animation for digital clock */
+	0% 		{opacity : 0;}
+	50% 		{opacity : 0;}
+	55% 		{opacity : 1.0;}
+	96%		{opacity : 1.0;}
+	100%		{opacity : 0;}}
+
+	@-webkit-keyframes digital_clock_fadein{  /* Fade in animation for digital clock */
+	0% 		{opacity : 1;}
+	50%		{opacity : 1;}
+	100%		{opacity : 1.0;}}
+	
+	@-webkit-keyframes analog_clock_fadein{  /* Fade in animation for digital clock */
+	0% 		{opacity : 0;}
+	50%		{opacity : 0;}
+	100%		{opacity : 1.0;}}
+	
+	@-webkit-keyframes calendar_fadein{  /* Fade in animation for date */
+	0% 		{opacity : 1;}
+	50%		{opacity : 1;}
+	100%		{opacity : 1.0;}}			
+
+	@-webkit-keyframes global_fadein {  /* Fade in animation for all */
+	0% 		{opacity : 0;}
+	50%		{opacity : 0;}
+	100%	{opacity : 1.0;}}
+	
+	@-webkit-keyframes twilight_fadein {  /* Fade in animation for all */
+	0% 		{opacity : 0;}
+	50%		{opacity : 0;}
+	100%	{opacity : 0.7;}}
+	
+	@-webkit-keyframes forecastbg_fadein {  /* Fade in animation for all */
+	0% 		{opacity : 0;}
+	50%		{opacity : 0;}
+	100%	{opacity : 0.7;}}
+	
+	@-webkit-keyframes Weather_Info_fadein {  /* Fade in animation for all */
+	0% 		{opacity : 1;}
+	50%		{opacity : 1;}
+	100%	{opacity : 1.0;}}
+	
+	@-webkit-keyframes sunray_moonray_shine{  /* Fade in/out animation for sunray/moonray */
+	0%		{opacity : 0.1;}
+	50%		{opacity : 0.9;}
+	100%	{opacity : 0.1;}}	
+
+	@-webkit-keyframes sunray_anim {
+		0% { opacity : 0; -webkit-transform : scale(0.5, 0.5) translateZ(0); }
+		50% { opacity : 0.6; -webkit-transform : scale(1.0, 1.0) translateZ(0); }
+		90% { opacity : 0.3; }
+		100% { opacity : 0; -webkit-transform : scale(1.5, 1.5) translateZ(0); }
+}
+	
+	@-webkit-keyframes dock_fadein {  /* Fade in animation for your dock image */
+	0% 		{opacity : 0;}
+	50%		{opacity : 0;}
+	100%	{opacity : 1.0;}}
+
+/* TEXT STYLE */
+
+.TextColorRed { color: red; }
+.TextColorGrey { color: default; }
+
+/* TRANSITION STYLE */
+
+.fade-out-option { opacity: 0.0; }
+.fade-in-option { opacity: 1.0; }
+
+.fade-out-wall { opacity: 0.0; }
+.fade-in-wall { opacity: 1.0; }
+
+	/* OVERLAYS & BACKGROUNDS (alphabetical order)
+=================================================== */
+
+#backgroundContainer{
+	position: absolute;
+	top: 0px; 
+	left: 0px; 
+	width: 320px; 
+	height: 568px; 
+	z-index: 0;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 2s;
+	}
+
+#background{
+/* 	background: url('../../Images/background/iph5/background.png') center no-repeat; */
+	background-size: 320px 568px;
+	position: absolute;
+	top: 0px; 
+	left: 0px; 
+	width: 320px; 
+	height: 568px;
+	display: none;
+	opacity: 0.0;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;	
+}
+
+#blankbg{
+/* 	background: url('../../Images/background/iph5/blankbg.png') center no-repeat; */
+	background-size: 320px 568px;
+	position: absolute;
+	top: 0px; 
+	left: 0px; 
+	width: 320px; 
+	height: 568px;
+	display: none;
+	opacity: 0.0;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;	
+}
+	
+#DayNightWalls{ /* Day & Night Images (in day_night folders)*/
+    position: absolute;	
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+	display: none;
+	opacity: 0.0;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;	
+}	
+
+#fullScreenWeatherWalls { /*Full screen weather backgrounds (in "Images/fullScreenWeatherWalls" folder) */
+	position:absolute; 
+	top: 0px; 
+	left: 0px; 
+	width: 320px; 
+	height: 568px;
+	display: none;
+	opacity: 0.0;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;	
+}
+
+
+
+#forecastbg{
+/* 	background: url('../../Images/forecastbg/forecastbg.png') center no-repeat; */
+	background-size: 320px 480px;
+	width: 320px;
+    height: 480px;
+	position: absolute; 
+	top: 35px; 
+	left: 0px;
+	z-index: 14;
+/* 	border: 2px 0px solid rgba(255,255,255,.5);	 */
+	}
+
+
+
+@-webkit-keyframes move {
+	0% 		{-webkit-transform : translateX(0px);}
+	100%	{-webkit-transform : translateX(-960px);}
+}
+
+#twilightBG{
+/* 	background: url('../../Images/Weather/sun/twilight.png') center no-repeat; */
+	background-size: 320px 568px;
+	width: 320px;
+	height: 568px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: 3;
+	display:none;
+	-webkit-animation: twilight_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}	
+	
+#WeatherInfoBG {
+/* 	background: url('../../Images/WeatherInfoBG/iph5/WeatherInfoBG.png') center no-repeat; */
+	background-size: 320px 568px;
+	position: absolute; 
+	width: 320px;
+    height: 568px;
+	top: 30px; 
+	left: 0px;
+	z-index: 14;	
+	}
+		
+	/* CONTAINERS (alphabetical order)
+=================================================== */
+
+
+#cloudContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 30;
+	opacity : 0.6;	/* opacity of all clouds */
+    overflow: hidden;
+	}
+	
+#dropContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 300px;
+    height: 568px;
+    z-index: 88;
+    overflow: hidden;
+	}
+	
+#fogContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 30;
+	opacity : 0.8;	/* opacity of fog/haze */
+    overflow: hidden;
+	}
+
+#frameContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 50;
+    overflow: hidden;
+	}
+
+
+#meteorContainer{
+    position: absolute;
+    top: 0px;
+	left: 10px;
+    width: 320px;
+    height: 100px;
+    z-index: 12;
+    overflow: hidden;
+	}
+
+#overlayContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 14;
+	opacity: 0.0;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+#small_balloonContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 51;
+	opacity : 1.0;	/* opacity of balloons */
+    overflow: hidden;
+	}	
+	
+#starContainer{
+    position: absolute;
+    top: 0px;
+	left: 5px;
+    width: 310px;
+    height: 200px;
+    z-index: 11;
+    overflow: hidden;
+	}
+
+#starsBGContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 200px;
+    z-index: 4;
+    overflow: hidden;
+	}
+	
+#sun_moonContainer{ /* sun & moon */
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 20;
+    overflow: hidden;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 2s;
+	}	
+
+/************************************************* !컨테이너 */
+#WeatherInfoContainer{ /* Container for all weather info displayed on screen */
+	position: absolute;
+    top: 120px;
+	left: 0px;
+    width: 320px;
+    height: 145px;
+	z-index: 90;
+	background: rgba(0,0,0,.5);
+	display: none;
+	z-index: 9999;
+	}
+
+#WeatherInfo{
+	position: absolute;
+    top: 30px;
+	left: 0px;
+    width: 320px;
+    height: 548px;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 2s;
+}
+	
+#windContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 110;
+	opacity : 1.0;	/* opacity of all clouds/fog/haze */
+    overflow: hidden;
+	}		
+
+#windmillContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 58;
+	opacity : 1.0;
+    overflow: hidden;
+	}
+	
+#wiperContainer{
+    position: absolute;
+    top: 0px;
+	left: 0px;
+    width: 320px;
+    height: 568px;
+    z-index: 100;
+    overflow: hidden;
+	}
+
+	/* WEATHER INFO (alphabetical order)
+=================================================== */
+
+#city{
+	position: absolute;
+	text-align: center;
+	top: 125px;
+	left: 0px;
+	width: 320px;
+	height: 13px;
+	font-size: 24px;
+	opacity: 1.0;
+	font-family: 'HelveticaNeue-UltraLight',AppleSDGothicNeo-UltraLight;
+	}
+	
+#coordinates{
+	position: absolute;	
+	top: 170px;
+	right: 7px;
+	width: 200px;
+	text-align: right;
+	font-size: 9px;
+	opacity: 1.0;
+	display: none;
+	}
+	
+#desc{
+	position: absolute;	
+	top: 150px;
+	left: 0px;
+	width: 320px;
+	text-align: center;	
+	font-size: 24px;
+	opacity: 1.0;
+	font-family: 'HelveticaNeue-UltraLight',AppleSDGothicNeo-UltraLight;
+	margin: 0 auto;
+	}
+	
+#feelslike{  /* ("Feels Like" text) */
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	width: 120px;
+	text-align: right;	
+	font-size: 16px;
+	}
+
+#fullmoon {
+	position: absolute;
+	top: 187px;
+	left: 0px;
+	text-align: center;
+	width: 320px;
+	height: 12px;
+	text-shadow: Black -2px 2px 2px;
+	font-size: 12px;
+	opacity: 1.0;
+	display: none;
+	}
+
+#high{
+	position: absolute;
+	overflow: hidden;
+	text-align: left;
+	font-size: 20px;
+	top: 5px;
+	right: 60px;
+	font-family: 'HelveticaNeue';
+	}
+#high span {
+	font-size: 32px !important;
+}
+#humidity{
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	font-size: 16px;
+	}
+	
+#lastupdate{
+	position: absolute;	
+	top: 90px;
+	right: 7px;
+	width: 320px;
+	text-align: center;
+	font-size: 14px;
+	}
+#lastupdate span {
+	font-size: 14px !important;
+}	
+	
+#low{
+	position: absolute;
+	overflow: hidden;
+	text-align: left;
+	font-size: 16px;
+	top: 5px;
+	right: 5px;
+	font-family: 'HelveticaNeue';
+	opacity: .5;
+	}
+#low span {
+	font-size: 32px !important;
+}
+#moonrise { 	/* time display */
+	position: absolute;
+	top: 30px;
+	left: 107px;
+	width: 70px;
+	text-align: left;
+	font-size: 12px;
+	}
+	
+#moonrisetext{
+	position: absolute;
+	text-align: left;
+	top: 76px;
+	left: 7px;
+	width: 70px;
+	font-size: 14px;
+	text-shadow: Black -2px 2px 2px;
+	-webkit-animation: moon_info_fader 20s linear infinite normal;
+	-webkit-animation-fill-mode: forwards;
+	opacity: 1.0; /* Set to 0.0 if your using images instead of text */
+	display: none;
+	}
+	
+#moonset { 	/* time display */
+	position: absolute;
+	top: 30px;
+	left: 157px;
+	width: 70px;
+	text-align: left;
+	font-size: 12px;
+	}
+	
+#moonsettext{
+	position: absolute;
+	text-align: right;
+	top: 76px;
+	right: 7px;
+	width: 80px;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: Black -2px 2px 2px;
+	-webkit-animation: moon_info_fader 20s linear infinite normal;
+	-webkit-animation-fill-mode: forwards;
+	opacity: 1.0; /* Set to 0.0 if your using images instead of text */
+	display: none;
+	}
+
+#pressure{
+	position: absolute;	
+	top: -20px;
+	left: 5px;
+	width: 150px;
+	height: 12px;
+	text-align: left;
+	font-size: 16px;	
+	}
+
+#rising{
+	position: absolute;	
+	top: 43px;
+	left: 30px;
+	width: 60px;
+	height: 24px;
+	text-align: left;
+	font-size: 24px;
+	text-shadow: black -2px 2px 2px;
+	opacity: 0.0;
+	display: none;
+	}
+
+#sunrise { 	/* time display */
+	position: absolute;
+	top: 30px;
+	left: 7px;
+	width: 70px;
+	text-align: left;
+	font-size: 12px;
+	opacity: 1.0;
+	}
+	
+#sunriseimg{	/* optional image instead of text */
+	position: absolute;
+	width: 21px;
+	height: 20px;
+	margin: 0 auto;	
+	top: 5px;
+	left:15px;
+	}	
+	
+#sunrisetext{
+	position: absolute;
+	text-align: left;
+	top: 76px;
+	left: 7px;
+	width: 70px;
+	font-size: 14px;
+	text-shadow: Black -2px 2px 2px;
+	display: none;
+	}	
+	
+#sunset { 	/* time display */
+	position: absolute;
+	width: 70px;
+	top: 30px;
+	left: 30px;
+	text-align: right;
+	font-size: 12px;
+	}
+	
+#sunsetimg{		/* optional image instead of text */
+	position: absolute;
+	width: 21px;
+	height: 20px;
+	margin: 0 auto;	
+	top: 5px;
+	left:65px;
+	}	
+	
+#sunsettext{
+	position: absolute;
+	text-align: right;
+	top: 76px;
+	right: 7px;
+	width: 70px;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: Black -2px 2px 2px;
+	display: none;
+	}
+
+#sunrise2 { 	/* time display */
+	position: absolute;
+	top: 92px;
+	left: 7px;
+	width: 70px;
+	text-align: left;
+	font-size: 12px;
+	opacity: 1.0;
+	color: red;
+	}
+
+#sunriseimg2{	/* optional image instead of text */
+	position: absolute;
+	width: 21px;
+	height: 20px;
+	margin: 0 auto;	
+	top: 5px;
+	left:115px;
+	}
+
+#sunrisetext2{
+	position: absolute;
+	text-align: left;
+	top: 76px;
+	left: 7px;
+	width: 70px;
+	font-size: 14px;
+	text-shadow: Black -2px 2px 2px;
+	opacity: 1.0; /* Set to 0.0 if your using images instead of text */
+	}
+
+#sunset2 { 	/* time display */
+	position: absolute;
+	width: 70px;
+	top: 92px;
+	right: 7px;
+	text-align: right;
+	font-size: 12px;
+	text-shadow: black -2px 2px 2px;
+	opacity: 1.0;
+	}
+
+#sunsetimg2{		/* optional image instead of text */
+	position: absolute;
+	width: 21px;
+	height: 20px;
+	margin: 0 auto;	
+	top: 5px;
+	left:165px;
+	}
+
+#sunsettext2{
+	position: absolute;
+	text-align: right;
+	top: 76px;
+	right: 7px;
+	width: 70px;
+	font-size: 14px;
+	font-weight: normal;
+	text-shadow: Black -2px 2px 2px;
+	opacity: 1.0; /* Set to 0.0 if your using images instead of text */
+	}
+
+#temp{
+	position: absolute;
+	top: 170px;
+	left: 7px;
+	width: 320px;
+	text-align: center;	
+	font-size: 80px;
+	font-weight: 100;
+	font-family: 'HelveticaNeue-UltraLight';
+	margin: 0 auto;	
+	z-index: 999;
+	}
+	
+#UVIndex{
+	position: absolute;
+	top:70px;
+	left: 7px;
+	width: 100px;
+	text-align: left;	
+	font-size: 16px;
+	}			
+
+#visibility{
+	position: absolute;
+	top: 50px;
+	text-align: right;
+	left: -50px;
+	width: 150px;
+	height: 12px;
+	font-size: 16px;
+	opacity: 1.0;
+	}
+
+#wind{
+	position: absolute;
+	top: 70px;
+	right: 0px;
+	width:150px;
+	font-size: 16px;
+
+	}
+
+	/* ARC SUN & MOON (alphabetical order)
+=================================================== */
+
+
+#arcmoon{
+/* 	background:url('../../Images/Weather/moon/moon.png') center no-repeat; */
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -140px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 25;
+	opacity: 0.0;
+	display: none;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+	
+#arcmoonray{
+	background:url('../../Images/Weather/moon/moonray.png') center no-repeat;
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -140px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 21;
+	opacity: 0.0;
+	display: none;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: sunray_moonray_shine 15s linear infinite normal;
+	-webkit-animation-delay:5s;		
+	}
+	
+#arcsun{
+	/* background:url('../../Images/Weather/sun/ians_sun.png') center no-repeat; */
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -140px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 25;
+	opacity: 0.0;
+	display: none;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+	
+#arcsunray{
+	background:url('../../Images/Weather/sun/ians_sunray.png') center no-repeat;
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -140px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 21;
+	opacity: 0.0;
+	display: none;
+	-webkit-transform-origin: 50% 100%;
+	-webkit-animation: sunray_moonray_shine 15s linear infinite normal;
+	-webkit-animation-delay: 5s;	
+	}	
+	
+#arcsunrings{
+	background:url('../../Images/Weather/sun/sunrings.png') center no-repeat;
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -300px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 21;
+	opacity: 0.0;
+	display: none;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-animation: sunray_anim 20s linear infinite normal;
+}
+
+
+	/* STANDARD SUN & MOON (alphabetical order)
+=================================================== */
+
+
+#moon{
+/* 	background:url('../../Images/Weather/moon/moon.png') center no-repeat; */
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -300px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 25;
+	opacity: 0.0;
+	display: none;
+	-webkit-animation: global_fadein 2s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+	
+#moonray{
+	background:url('../../Images/Weather/moon/moonray.png') center no-repeat;
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -300px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 21;
+	opacity: 0.0;
+	display: none;
+	-webkit-animation: sunray_moonray_shine 15s linear infinite normal;
+	-webkit-animation-delay:5s;		
+	}
+	
+#sun{
+	/* background:url('../../Images/Weather/sun/ians_sun.png') center no-repeat; */
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -300px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 25;
+	opacity: 0.0;
+	display: none;
+	}
+	
+#sunray{
+	background:url('../../Images/Weather/sun/ians_sunray.png') center no-repeat;
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -300px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 21;
+	opacity: 0.0;
+	display: none;
+	-webkit-animation: sunray_moonray_shine 15s linear infinite normal;
+	-webkit-animation-delay:5s;	
+	}	
+	
+#sunrings{
+	background:url('../../Images/Weather/sun/sunrings.png') center no-repeat;
+	background-size: 600px 600px;
+    position: absolute;
+    top: -270px;
+	left: -300px;
+    width: 600px;
+    height: 600px;
+	margin : auto 0;
+    z-index: 21;
+	opacity: 0.0;
+	display: none;
+	-webkit-animation: sunray_anim 20s linear infinite normal;
+	-webkit-transform-origin: 50% 50%;
+}
+
+	/* 4 DAY FORECAST
+=================================================== */
+
+#forecastInfo {
+	border-top: 1px solid rgba(255,255,255,.5);
+    background-color: transparent;
+	position: absolute;
+	top: 268px;
+	left: 0px;
+	width : 320px;
+	height: 100px;
+	z-index: 70;
+	-webkit-transition-property: opacity;
+	-webkit-transition-duration: 2s;
+	padding: 10px 0;
+}
+
+#Day1, #Day2, #Day3, #Day4, #Day5 {
+	position: relative;
+	top: -7px;
+	width : 80px;
+ 	font-weight:normal;
+ 	font-size:14px;
+}
+
+#Day1Icon, #Day2Icon, #Day3Icon, #Day4Icon, #Day5Icon {
+	position: relative;
+	top: -3px;
+	width: 49px;
+	height: 31px;
+	
+}
+
+#Day1HiLo, #Day2HiLo, #Day3HiLo, #Day4HiLo, #Day5HiLo {
+	position: relative;
+	top: -7px;
+	width: 80px;
+ 	font-family: HelveticaNeue;
+ 	font-size:12px;
+ 	color: rgba(255,255,255,.5);
+}
+
+	/* ANALOG CLOCK (alphabetical order)
+=================================================== */	
+
+#analogclock{	/* Container */
+	opacity: 1.0;
+	}
+
+#bigsechand {
+	background: url('../../Images/clockhands/bigsechand.png') 12.5px 33.5px no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 220px;
+	background-size:25px 110px;
+	top: 25px;
+	left: 135px;
+	z-index: 85;
+	-webkit-animation: analog_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}	
+	
+#clockface{
+	background: url('../../Images/clockface/TransClock.png') center no-repeat;
+	background-size: 320px 480px;
+	width: 320px;
+    height: 480px;
+	position: absolute; 
+	top: 0px; 
+	right: 0px; 
+	left: 0px;
+	z-index: 80;
+	-webkit-animation: analog_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;	
+	}
+	
+#clockglass{
+	background: url('../../Images/clockface/clock_glass.png') center no-repeat;
+	background-size: 320px 480px;
+	width: 320px;
+    height: 480px;
+	position: absolute; 
+	top: 0px; 
+	right: 0px; 
+	left: 0px;
+	z-index: 88;
+	-webkit-animation: analog_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;	
+	}	
+	
+#hourhand {
+	background: url('../../Images/clockhands/hourhand.png') 12.5px 33.5px no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 220px;
+	background-size:25px 110px;
+	top: 25px;
+	left: 135px;
+	z-index: 83;
+	-webkit-animation: analog_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+	
+#minhand {
+	background: url('../../Images/clockhands/minhand.png') 12.5px 33.5px no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 220px;
+	background-size:25px 110px;
+	top: 25px;
+	left: 135px;
+	z-index: 84;
+	-webkit-animation: analog_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+	
+#node {
+	background: url('../../Images/clockhands/node.png') 12.5px 33.5px no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 220px;
+	background-size:25px 110px;
+	top: 25px;
+	left: 135px;
+	z-index: 86;
+	-webkit-animation: analog_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}	
+	
+#smallsechand {
+	background: url('../../Images/clockhands/smallsechand.png') 12.5px 33.5px no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 220px;
+	background-size:25px 110px;
+	top: 63px;
+	left: 135px;
+	z-index: 82;
+	-webkit-animation: analog_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+	
+	/* DIGITAL CLOCK
+=================================================== */	
+
+#Digitalclock{  /*  Container (position the whole clock with this container) */
+	background-color : transparent;
+	position: absolute;
+	text-align:center;
+	width: 320px;
+	margin: 0;
+	height: 40px;
+	top: 10px;  		
+	z-index: 80;	
+	}
+
+#clock{
+	background-color: transparent;
+	position: absolute;
+	top: 10px;
+	width: 320px;
+	height: 40px;
+	font-family: HelveticaNeue-UltraLight;
+	font-weight: 100;
+	z-index: 80;
+	font-size: 70px;
+	}
+	
+#ampm{
+	background-color: transparent;
+	position: absolute;
+	text-align:center;
+	top: 30px;
+	left: 210px;
+	width: 25px;
+	height: 25px;
+	font-family: DBLCDTempBlack;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: black -2px 2px 2px;
+	z-index: 80;
+	display: none;
+	}
+
+#second{
+	background-color: transparent;
+	position: absolute;
+	text-align:center;
+	top: 18px;
+	left: 210px;
+	width: 25px;
+	height: 25px;
+	font-family: DBLCDTempBlack;
+	font-size: 16px;
+	font-weight: bold;
+	text-shadow: black -2px 2px 2px;
+	z-index: 80;
+	-webkit-animation: digital_clock_fadein 3s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+	/* DATE
+=================================================== */
+
+#calendar{ /* Container */
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 320px;
+	height: 568px;
+	z-index: 81;
+	-webkit-animation: calendar_fadein 4s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+	}
+
+/*
+#day{
+	position: absolute;
+	background-color: transparent;
+	width: 320px;
+	height: 12px;
+	font-family: Verdana;
+	top: 140px;
+	text-align: center;
+	font-size: 11px;
+	text-shadow: black 0px -1px 0px;
+	}
+
+#date{
+	position: absolute;
+	background-color: transparent;
+	width: 18px;
+	height: 14px;
+	font-family: Verdana;
+	top: 128px;
+	left: 193px;
+	text-align: center;
+	font-size: 12px;
+	text-shadow: black -2px 2px 2px;
+	}
+
+#month{
+	position: absolute;
+	background-color: transparent;
+	width: 320px;
+	height: 12px;
+	font-family: Verdana;
+	top: 106px;
+	text-align: center;
+	font-size: 10px;
+	text-shadow: black 0px -1px 0px;
+	}	
+	
+#year{
+	position: absolute;
+	background-color: transparent;
+	width: 320px;
+	height: 12px;
+	font-family: Verdana;
+	top: 118px;
+	text-align: center;
+	font-size: 10px;
+	text-shadow: black 0px -1px 0px;
+	}
+*/
+	
+#SingleLineDate{
+position: absolute;
+background-color: transparent;
+width: 320px;
+height: 20px;
+top: 100px;
+text-align: center;
+font-size: 16px;
+z-index: 81;
+}
+
+
+	
+/* END */

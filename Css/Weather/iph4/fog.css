@@ -1,0 +1,31 @@
+/* Fog condition iph5
+   UniAW6.2 By Ian Nicoll with credit to Dacal */
+
+#fogContainer > div {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#fogContainer > div > img {
+     position: absolute;
+     width: 350px;
+     height: 300px;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+     -webkit-transform-origin: 50% -100%;
+}
+@-webkit-keyframes fade {
+    0%	 { opacity: 0; }
+	15%	 { opacity: 1; }
+    85%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes float {
+    0%	 { -webkit-transform: translate(-50px, 0px); }
+    100% { -webkit-transform: translate(500px, 0px); }
+}
+

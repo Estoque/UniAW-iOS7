@@ -1,0 +1,34 @@
+/* Dandelion_Effects condition iph5
+   UniAW6.2 By Ian Nicoll with credit to Dacal */
+
+#windmill {
+	position: absolute;
+	background-size: 320px 568px;
+	top: 15px;
+	left: 0px;
+	width: 320px;
+	height: 568px;
+}
+
+#wings {
+	position: absolute;
+	background-size: 300px 300px;
+	top: 236px;
+	right: 111px;
+	height: 300px;
+	width: 300px;
+	-webkit-transform-origin-x: 50%;
+	-webkit-transform-origin-y: 50%;
+	-webkit-animation: wings_rotate;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+
+}
+@-webkit-keyframes wings_rotate{
+0%		{-webkit-transform: rotateZ(-20deg); }
+90% 	{-webkit-transform: rotateZ(1430deg); }
+100% 	{-webkit-transform: rotateZ(1420deg); }
+}
+

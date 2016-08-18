@@ -1,0 +1,187 @@
+/* Windy condition iph5
+   UniAW6.2 By Ian Nicoll with credit to Dacal */
+
+#windContainer > div {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#windContainer > div > img {
+     position: absolute;
+     width: 70px;
+     height: 70px;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+     -webkit-transform-origin: 0% 10%;
+}
+
+#cloudContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+	opacity: 0.0;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#cloudContainer > div > img {
+     position: absolute;
+     width: 300px;
+     height: 200px;
+}
+@-webkit-keyframes fade {
+    0%	 { opacity: 0; }
+    10%	 { opacity: 0.5; }
+	15%	 { opacity: 1; }
+    85%  { opacity: 1; }
+    95%  { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes float {
+    0%	 { -webkit-transform: translateX(-50px); }
+    100% { -webkit-transform: translateX(400px); }
+}
+
+#big_balloonContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#big_balloonContainer > div > img {
+     position: absolute;
+     width: 200px;
+     height: 133px;
+	 -webkit-transform:rotate(12deg);
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+}
+
+#small_balloonContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+
+#small_balloonContainer > div > img {
+     position: absolute;
+     width: 200px;
+     height: 133px;
+	 -webkit-transform:rotate(12deg);
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes floatballoon {
+    0%	 { -webkit-transform: translate(-200px, 0px); }
+    100% { -webkit-transform: translate(700px, 0px); }
+}
+
+#starContainer > div {
+    position: absolute;
+     width: 15px;
+     height: 15px;
+	 opacity: 0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+#starContainer > div > img {
+     position: absolute;
+     width: 15px;
+     height: 15px;
+}
+@-webkit-keyframes star_anim {
+	0% {
+	-webkit-transform : scale(0, 0);	
+	opacity: 0.0;
+	}
+	20% {
+	-webkit-transform : scale(1, 1);	
+	opacity: 1.0;
+	}
+	40% {
+	-webkit-transform : scale(0.5, 0.5);	
+	opacity: 0.2;
+	}
+	60% {
+	-webkit-transform : scale(1, 1);
+	opacity: 1.0;
+	}
+	90% {
+	-webkit-transform : scale(0, 0);
+	opacity: 0.0;
+	}
+	100% {opacity: 0.0;}
+}
+
+#meteorContainer > div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+	opacity: 0;
+    -webkit-animation-iteration-count: 1, 1;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in-out;
+}
+#meteorContainer > div > img {
+     position: absolute;
+     width: 20px;
+     height: 15px;
+}
+@-webkit-keyframes drop1 {
+    0%	 { -webkit-transform: translate(0px, 0px); }
+    100% { -webkit-transform: translate(-100px, 20px); }
+}
+@-webkit-keyframes drop2 {
+    0%	 { -webkit-transform: translate(0px, 0px); }
+    100% { -webkit-transform: translate(100px, 20px); }
+}
+@-webkit-keyframes fade2 {
+    0%	 { opacity: 0; }
+	80%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#starsBG {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	width: 320px;
+	height: 75px;
+	opacity: 0.0;
+	-webkit-animation: fadeBG 8s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeBG {
+	0% 		{opacity : 0;}
+	50%		{opacity : 0;}
+	100%		{opacity : 1.0;}}
+	
+@-webkit-keyframes fadeWind {
+    0%	 { opacity: 1; }
+    95%  { opacity: 1; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes floatWind {
+    0%	 { -webkit-transform: translate(-100px, -100px); }
+    100% { -webkit-transform: translate(670px, 200px); }
+}
+@-webkit-keyframes clockwiseSpin {
+    0%	 { -webkit-transform: rotateX(-180deg); }
+    100% { -webkit-transform: rotateX(180deg); }
+}
+@-webkit-keyframes counterclockwiseSpin {
+    0%	 { -webkit-transform: rotate(180deg); }
+    100% { -webkit-transform: rotate(-180deg); }
+}	

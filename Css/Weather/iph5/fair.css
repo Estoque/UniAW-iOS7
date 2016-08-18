@@ -1,0 +1,212 @@
+/* fair condition iph5
+   UniAW6.2 By Ian Nicoll with credit to Dacal */
+
+#astronaut {
+    position: absolute;
+	top: -10px;
+    width: 50px;
+    height: 65px;
+	left: -40px;
+	opacity: 1.0;
+	-webkit-animation: astronaut_anim 120s linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear;
+}	
+@-webkit-keyframes astronaut_anim {
+    0%	 { -webkit-transform: translate(0px, 0px) scale(0.0, 0.0) rotate(-40deg)  }
+    5%	 { -webkit-transform: translate(10px, 2px) scale(0.1, 0.1) rotate(-20deg)  }
+    10%	 { -webkit-transform: translate(20px, 4px) scale(0.2, 0.2) rotate(0deg)  }
+    15%	 { -webkit-transform: translate(30px, 6px) scale(0.3, 0.3) rotate(20deg)  }
+    20%	 { -webkit-transform: translate(40px, 8px) scale(0.4, 0.4) rotate(40deg)  }
+    25%	 { -webkit-transform: translate(50px, 10px) scale(0.5, 0.5) rotate(20deg)  }
+    30%	 { -webkit-transform: translate(60px, 12px) scale(0.6, 0.6) rotate(0deg)  }
+    35%	 { -webkit-transform: translate(70px, 14px) scale(0.7, 0.7) rotate(-20deg)  }
+    40%	 { -webkit-transform: translate(80px, 16px) scale(0.8, 0.8) rotate(-40deg)  }
+    45%	 { -webkit-transform: translate(90px, 18px) scale(0.9, 0.9) rotate(-20deg)  }
+    50%	 { -webkit-transform: translate(110px, 20px) scale(1.0, 1.0) rotate(0deg)  }
+    55%	 { -webkit-transform: translate(130px, 22px) scale(1.0, 1.0) rotate(20deg)  }
+    60%	 { -webkit-transform: translate(160px, 24px) scale(1.0, 1.0) rotate(40deg)  }
+    65%	 { -webkit-transform: translate(190px, 26px) scale(1.0, 1.0) rotate(20deg)  }
+    70%	 { -webkit-transform: translate(220px, 28px) scale(1.0, 1.0) rotate(0deg)  }
+    75%	 { -webkit-transform: translate(250px, 30px) scale(1.0, 1.0) rotate(-20deg)  }
+    80%	 { -webkit-transform: translate(280px, 32px) scale(1.2, 1.2) rotate(-40deg)  }
+    85%	 { -webkit-transform: translate(310px, 34px) scale(1.4, 1.4) rotate(-20deg)  }
+    90%	 { -webkit-transform: translate(340px, 36px) scale(1.6, 1.6) rotate(0deg)  }
+    95%	 { -webkit-transform: translate(370px, 38px) scale(1.8, 1.8) rotate(20deg)  }
+	100%	 { -webkit-transform: translate(440px, 40px) scale(1.8, 1.8) rotate(40deg) }
+}
+
+#big_balloonContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+
+#big_balloonContainer > div > img {
+     position: absolute;
+     width: 200px;
+     height: 133px;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+}
+
+#small_balloonContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+
+#small_balloonContainer > div > img {
+     position: absolute;
+     width: 200px;
+     height: 133px;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-timing-function: ease-in-out;
+}
+
+#birds1 {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	width: 470px;
+	height: 93px;
+	opacity: 1.0;
+	-webkit-animation: birds1_anim 120s linear normal;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}	
+@-webkit-keyframes birds1_anim {
+    0%	 { -webkit-transform: translate(400px, 120px); }
+    100% { -webkit-transform: translate(-600px, -80px); }
+}
+	
+#V_Birds {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	width: 200px;
+	height: 100px;
+	opacity: 1.0;
+	-webkit-animation: V_birds_anim 80s linear normal;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal, horizontal ;
+    -webkit-animation-timing-function: linear, ease-in;
+}	
+@-webkit-keyframes V_birds_anim {
+    0%	 { -webkit-transform: translate(700px, 200px); }
+    100% { -webkit-transform: translate(-700px, -150px); }
+}
+
+#cloudContainer > div {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+	opacity: 0.0;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-timing-function: linear, ease-in;
+}
+#cloudContainer > div > img {
+     position: absolute;
+     width: 300px;
+     height: 200px;
+}
+@-webkit-keyframes fade {
+    0%	 { opacity: 0; }
+    10%	 { opacity: 0.5; }
+	15%	 { opacity: 1; }
+    85%  { opacity: 1; }
+    95%  { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes float {
+    0%	 { -webkit-transform: translateX(-50px); }
+    100% { -webkit-transform: translateX(400px); }
+}
+
+@-webkit-keyframes fade1 {
+    0%	 { opacity: 0; }
+    10%	 { opacity: 0.5; }
+	15%	 { opacity: 1; }
+    85%  { opacity: 1; }
+    95%  { opacity: 0.5; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes float1 {
+    0%	 { -webkit-transform: translateX(-250px); }
+    100% { -webkit-transform: translateX(500px); }
+}
+
+#meteorContainer > div {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+	opacity: 0;
+    -webkit-animation-iteration-count: 1, 1;
+    -webkit-animation-direction: normal, normal;
+    -webkit-animation-timing-function: linear, ease-in-out;
+}
+#meteorContainer > div > img {
+     position: absolute;
+     width: 20px;
+     height: 15px;
+}
+@-webkit-keyframes meteordrop1 {
+    0%	 { -webkit-transform: translate(0px, 0px); }
+    100% { -webkit-transform: translate(-100px, 20px); }
+}
+@-webkit-keyframes meteordrop2 {
+    0%	 { -webkit-transform: translate(0px, 0px); }
+    100% { -webkit-transform: translate(100px, 20px); }
+}
+@-webkit-keyframes meteorfade {
+    0%	 { opacity: 0; }
+	80%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#starContainer > div {
+    position: absolute;
+     width: 15px;
+     height: 15px;
+	 opacity: 0;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+#starContainer > div > img {
+     position: absolute;
+     width: 15px;
+     height: 15px;
+}
+@-webkit-keyframes star_anim {
+	0%  { -webkit-transform : scale(0, 0); opacity: 0.0; }
+	20% { -webkit-transform : scale(1, 1); opacity: 1.0; }
+	40% { -webkit-transform : scale(0.5, 0.5); opacity: 0.2; }
+	60% { -webkit-transform : scale(1, 1); opacity: 1.0; }
+	90% { -webkit-transform : scale(0, 0); opacity: 0.0; }
+	100% {opacity: 0.0;}
+}
+
+#starsBG {
+	position: absolute;
+	left: 0px;
+    top: 0px;
+	width: 320px;
+	height: 75px;
+	opacity: 0.0;
+	-webkit-animation: starsBGfade 8s linear 1 normal;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes starsBGfade {
+	0% 		{opacity : 0;}
+	50%		{opacity : 0;}
+	100%		{opacity : 1.0;}}
