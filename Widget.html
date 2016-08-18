@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- UniAW6.4_PP By Ian Nicoll and Dacal -->
+<!-- UniAW iOS7 Customized and Localized by Estoque - est0que.tistory.com -->
+<!-- 수정가능하지만 재업로드시에 2차 저작자 표시 해주셔야합니다.  -->
+<html lang="en">
+<head>
+<title>UniAW iOS7 by Estoque - est0que.tistory.com</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, minimum-scale=1.0 user-scalable=no" />
+<link rel="stylesheet" href="Css/Main/UniAW6_iph5.css" type="text/css" media="screen" />
+<script type="text/javascript" charset="utf-8" src="Config.js"></script>
+<script type="text/javascript" charset="utf-8" src="JavaScript/Main/jquery.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="JavaScript/Main/translation.js"></script>
+<script type="text/javascript" charset="utf-8" src="JavaScript/Main/main.js"></script>
+
+</head>
+<body>
+
+<img id="dock" src="Images/Layer/blank.png" style="display:none;"/>
+<img id="logo" src="Images/Layer/blank.png" style="display:none;"/>	
+	
+<div id="backgroundContainer">
+	<div id="background"></div>
+	<div id="blankbg"></div>
+	<img id="fullScreenWeatherWalls" src="Images/Layer/blank.png"/>
+	<img id="DayNightWalls" src="Images/Layer/blank.png"/>
+</div>
+
+<div id="analogclock">
+	<div id="clockface"></div>
+	<div id="clockglass"></div>
+	<div id="hourhand"></div>
+	<div id="minhand"></div>
+	<div id="smallsechand"></div>
+	<div id="bigsechand"></div>
+	<div id="node"></div>
+</div>
+	
+<div id="calendar">
+	<div id="day"></div>
+	<div id="month"></div>
+	<div id="date"></div>
+	<div id="year"></div>
+</div>
+	
+<div id="SingleLineDate"></div>
+
+<div id="Digitalclock">
+	<div id="clock"></div>
+	<div id="second"></div>
+	<div id="ampm"></div>
+</div>
+
+<div id="city"></div>
+<div id="desc"></div>
+<div id="temp"></div>
+
+<div id="WeatherInfoBG" class="fade-in-wall"></div>
+<div id="twilightBG" class="fade-in-wall"></div>
+	
+<div id="WeatherInfoContainer">
+	<div id="WeatherInfo" class="fade-in-wall">
+		
+		<div id="coordinates"></div>
+
+		<div id="humidity"></div>
+		<div id="lastupdate"></div>
+		<div id="feelslike"></div>
+		<div id="low"></div>
+		<div id="pressure"></div>
+		<div id="rising"></div>
+		<div id="sunrise"></div>
+		<div id="sunset"></div>
+		<div id="sunrise2"></div>
+		<div id="sunset2"></div>
+		<div id="moonrise"></div>
+		<div id="moonset"></div>
+		<div id="fullmoon"></div>
+		<div id="high"></div>
+		<div id="visibility"></div>
+		<div id="wind"></div>
+		<div id="UVIndex"></div>
+		<div id="sunrisetext"></div>
+		<div id="sunsettext"></div>
+		<div id="sunrisetext2"></div>
+		<div id="sunsettext2"></div>
+		<div id="moonrisetext"></div>
+		<div id="moonsettext"></div>		
+		<img id="sunriseimg" src="Images/SunriseSunset/sunrise.png"/>
+		<img id="sunsetimg" src="Images/SunriseSunset/sunset.png"/>
+		<img id="sunriseimg2" src="Images/SunriseSunset/moonrise.png"/>
+		<img id="sunsetimg2" src="Images/SunriseSunset/moonset.png"/>
+	</div>
+
+
+</div>
+
+
+	<div id="forecastbg" class="fade-in-wall"></div>
+	<div id="forecastInfo" class="fade-in-wall">
+		<table border="0" cellpadding="0" cellspacing="0" align="center">
+			<tr align="center">
+				<td id="Day1"></td>
+				<td id="Day2"></td>
+				<td id="Day3"></td>
+				<td id="Day4"></td>
+				<td id="Day5"></td>
+			</tr>		
+			<tr align="center">
+				<td>
+					<img id="Day1Icon" src="Icon Sets/blank.png"/>
+				</td>
+				<td>
+					<img id="Day2Icon" src="Icon Sets/blank.png"/>
+				</td>
+				<td>
+					<img id="Day3Icon" src="Icon Sets/blank.png"/>
+				</td>
+				<td>
+					<img id="Day4Icon" src="Icon Sets/blank.png"/>
+				</td>
+				<td>
+					<img id="Day5Icon" src="Icon Sets/blank.png"/>
+				</td>
+			</tr>
+			<tr align="center"><td id="Day1HiLo"></td><td id="Day2HiLo"></td><td id="Day3HiLo"></td><td id="Day4HiLo"></td><td id="Day5HiLo"></td></tr>
+		</table>
+	</div>
+</div>
+<div id="sun_moonContainer">
+	<div id="arcmoon"></div>
+	<div id="arcmoonray"></div>
+	<div id="arcsun"></div>
+	<div id="arcsunray"></div>
+	<div id="arcsunrings"></div>
+	<div id="moon"></div>
+	<div id="moonray"></div>
+	<div id="sun"></div>
+	<div id="sunray"></div>
+	<div id="sunrings"></div>
+</div>
+
+<div id="frameContainer"></div>
+<div id="fogContainer"></div>
+
+<div id="small_balloonContainer"></div>
+<div id="cloudContainer"></div>
+<div id="dropContainer"></div>
+
+
+<div id="meteorContainer"></div>
+<div id="windContainer"></div>
+<div id="windmillContainer"></div>
+<div id="starContainer"></div>
+<div id="starsBGContainer"></div>
+
+<script>
+$(document).ready(function(){
+  $("#WeatherInfoContainer").click(function(){
+    $("#WeatherInfoContainer").hide();
+  });
+  $("#temp").click(function(){
+    $("#WeatherInfoContainer").show();
+  });
+});
+</script>
+</body>
+</html>
+<!-- UniAW iOS7 Customized and Localized by Estoque - est0que.tistory.com -->

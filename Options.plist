@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- UniAW iOS7 Customized and Localized by Estoque - est0que.tistory.com -->
+<plist version="1.0">
+<array>
+	<dict>
+		<key>default</key>
+		<string>부산</string>
+		<key>label</key>
+		<string>지역 선택</string>
+		<key>name</key>
+		<string>Accuweather_Code</string>
+		<key>options</key>
+		<dict>
+			<key>부산</key>
+			<string>ASI|KR|KS012|BUSAN|</string>
+			<key>서울</key>
+			<string>ASI|KR|KS013|SEOUL|</string>
+			<key>대구</key>
+			<string>ASI|KR|KS002|TAEGU|</string>
+			<key>광주</key>
+			<string>ASI|KR|KS008|KWANGCHU|</string>
+			<key>울산</key>
+			<string>ASI|KR|KS016|ULSAN|</string>
+			<key>인천</key>
+			<string>ASI|KR|KS006|INCHEON|</string>
+			<key>대전</key>
+			<string>ASI|KR|KS015|DAEJEON|</string>															
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>	
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>GPS (myLocation 필요)</string>
+		<key>name</key>
+		<string>gps</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>체감 온도 사용</string>
+		<key>name</key>
+		<string>useRealFeel</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>예보에 체감 온도 사용</string>
+		<key>name</key>
+		<string>useRealFeelForForecast</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>15분</string>
+		<key>label</key>
+		<string>새로고침 시간</string>
+		<key>name</key>
+		<string>updateInterval</string>
+		<key>options</key>
+		<dict>
+			<key>1시간</key>
+			<string>60</string>
+			<key>1분</key>
+			<string>1</string>
+			<key>10분</key>
+			<string>10</string>
+			<key>15분</key>
+			<string>15</string>
+			<key>20분</key>
+			<string>20</string>
+			<key>30분</key>
+			<string>30</string>
+			<key>5분</key>
+			<string>5</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<string>한국어</string>
+		<key>label</key>
+		<string>언어선택</string>
+		<key>name</key>
+		<string>lang</string>
+		<key>options</key>
+		<dict>
+			<key>한국어</key>
+			<string>ko</string>
+			<key>중국어</key>
+			<string>cn</string>
+			<key>네덜란드어</key>
+			<string>nl</string>
+			<key>영어</key>
+			<string>en</string>
+			<key>핀란드어</key>
+			<string>fi</string>
+			<key>프랑스어</key>
+			<string>fr</string>
+			<key>독일어</key>
+			<string>de</string>
+			<key>이탈리아어</key>
+			<string>it</string>
+			<key>러시아어</key>
+			<string>ru</string>
+			<key>스페인어</key>
+			<string>sp</string>
+		</dict>
+		<key>type</key>
+		<string>select</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<false/>
+		<key>label</key>
+		<string>예보 숨기기</string>
+		<key>name</key>
+		<string>Hide_Forecast</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+	<dict>
+		<key>default</key>
+		<true/>
+		<key>label</key>
+		<string>12시간제 사용</string>
+		<key>name</key>
+		<string>ampm</string>
+		<key>type</key>
+		<string>switch</string>
+	</dict>
+</array>
+</plist>
